@@ -1,0 +1,277 @@
+@media(max-width:1199px){
+
+	.seach_wrap li {
+
+		margin-right: 10px!important;
+
+		margin-bottom: 35px;
+
+	}	
+
+	.paynowpaypal h2 {font-size: 28px;right: 38%;top: 10px;}
+
+	.custom_online_calculations .main-form label {
+
+		font-size:13px;    }
+
+		.custom_online_calculations .main-form label .fa{
+
+			font-size: 16px;
+
+		}
+
+		.main-form .form-group{position:relative;}
+
+		.main-form .form-group input+label+.fa,
+
+		.main-form .form-group input + .fa {
+
+			top:34px !important;
+
+		}
+		
+		.placeholder::after{
+			top: 33px !important;
+			right: 36px !important;
+		}
+
+		.MainBarWrap .commongrafwrapper{padding:10px 0;}
+
+	}
+
+	@media(max-width:991px){
+
+		.homebanner {
+
+			padding: 25px 0 32px!important;
+
+
+		}	
+
+		.map_img{
+
+			margin-bottom: 30px;
+
+			padding-left: 15px !important;    
+
+		}
+
+		.summaryofresults .main-row{margin-bottom: 0;}
+
+		.summaryofresults .main_panel_summary{width: 100%; margin-bottom: 20px;}
+
+		.paynowpaypal h2 {right: 18%;}
+
+		#masthead .navbar-nav li a {font-size: 15px;padding: 12px 10px 24px;}
+
+		#masthead .navbar-nav.navbar-right li a {height: 44px;margin-left: 10px;min-width: 110px;}
+
+		.footer_follows_sec .footer_followus_title a .fa {font-size: 20px;height: 36px;line-height: 36px;width: 36px;}
+
+		.footer_followus_title > ul {display: inline-block;float: none;margin: 0;padding: 0;text-align: center;}
+
+		.custom_online_calculations .main-form label {
+
+			font-size:13px;
+
+		}
+
+		.main-form .form-group{position:relative;}
+
+		.main-form .form-group input+label+.fa,
+
+		.main-form .form-group input + .fa {
+
+			top:34px !important;
+
+		}
+
+		.contct_container{
+
+			margin-top:20px;
+
+		}
+
+		.contct_container  .wpcf7-form label{
+
+			display: block;
+
+			width: 100%;
+
+		}
+
+		.contct_container .wpcf7-form-control-wrap{
+
+			width: 100%;
+
+		}
+		
+		.rightform_container .addInfoForm{
+			height:auto;
+		}
+
+	} 
+
+	@media(max-width:767px){
+
+		.footer_logo {text-align: center;margin-bottom: 20px;}
+
+		.table-responsive{border:none!important;}
+
+
+
+		.table-panel table{width: 600px!important; margin: auto;}
+
+		.heading_details h4{font-size: 22px;}
+
+		.main_panel_summary  .heading_details {
+
+			margin: 0;
+
+			padding: 25px 0 20px;
+
+		}
+
+		
+
+		
+
+		.custom_online_calculations .main-form{padding: 0;}
+
+		.custom_online_calculations .panel-headings h3 i{
+
+			width: 100%;
+
+			display: block;
+
+			margin-top: 8px;
+
+		}
+
+		.footer_content_sec {padding-bottom: 15px;padding-top:10px;text-align: center;}
+
+		.footer_follows_sec {text-align: center;}
+
+		#masthead .navbar-nav.navbar-right li a {background: none;border: none;text-align: left;}
+
+		#masthead .navbar-nav.navbar-right li a:hover, #masthead .navbar-nav.navbar-right li a:focus {background: none;color: #ea0011;}
+
+/* .desktop-hide{display:block;}
+
+.desktop-hide span{  font-family: RubikLight;color:#ea0011;} */
+
+.right_content .details span{
+
+	font-size: 19px;
+
+}
+
+.right_panel_1 .img-wraper .img-wrpa{
+
+	height: 133px;
+
+}
+
+#propertyListingTbl_paginate{
+
+	margin-bottom: 5px;
+
+}
+
+#map_canvas{
+
+	height:430px !important;
+
+}
+.no-pad-right,.no-pad-left,.custom-pad{
+	padding:0 !important;
+}
+.common_responsive {
+	width:100% !important;
+}
+} 
+
+@media(max-width:600px){ 
+
+	
+
+	.right_content .details,
+
+	.right_panel_1 .img-wraper{width: 100%; text-align: center;}
+
+	.right_panel_1 .img-wraper .img-wrpa{
+
+		display: inline-block;
+
+		height:150px;
+
+	}
+
+	.right_content {
+
+		display: inline-block;
+
+		padding-left: 0;
+
+		width: 100%;
+
+		text-align: center;
+
+	}
+
+	.visulise_btn.calculate_btn{position: static;}
+
+
+
+
+
+
+
+	.zillowzipcodename {width: 90%;}
+
+	.maintextbg {margin-bottom: 15px;width: 100%;}
+
+	.zillowsearch {display: block;margin: 0 auto;width: 180px;}
+
+	#myLoginPopupModal .modal-dialog, #myJoininPopupModal .modal-dialog {padding: 10px;}
+
+	.login_form {border: none;padding:0;}
+
+	.resetpass_form {border: none;padding:0;}
+
+	.popup_login h2 {font-size: 16px;padding: 17px;}
+
+	.popup_login h2 i.fa {font-size: 24px;height: 40px;margin-left: -12px;margin-top: -11px;width: 40px;}
+
+}
+
+@media(max-width:550px){
+
+	.common_responsive{
+
+		width:100%!important;
+
+	}
+
+	.back_so{margin-left: 0px;}
+
+	/* .visulise_btn{padding:14px 24px;} */
+
+	.paynowpaypal.wpb_single_image.vc_align_left{text-align:center;margin-bottom:50px !important;}
+
+	.paynowpaypal h2 {right: 0;top:70px;width:100%;text-align:center;}
+
+	.loginh4 button.close {left: 90%;top: 3%;}
+
+	.loginh4 span {font-size: 18px;}
+
+
+
+	.siteheading {font-size: 30px !important;}
+
+}
+
+
+
+
+

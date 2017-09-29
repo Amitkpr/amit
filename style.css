@@ -1,0 +1,231 @@
+/*
+Theme Name: The Real Estate Tycoons
+Theme URI: http://technocratshorizons.com/
+Author: The Techno Team
+Author URI: http://technocratshorizons.com/
+Description: The Real Estate Tycoons brings your site to life with header video and immersive featured images. Its an online real estate calcuator and offline calcuator as well.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: therealestatetycoons
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Normalize
+2.0 Accessibility
+3.0 Alignments
+4.0 Clearings
+5.0 Typography
+6.0 Forms
+7.0 Formatting
+8.0 Lists
+9.0 Tables
+10.0 Links
+11.0 Featured Image Hover
+12.0 Navigation
+13.0 Layout
+   13.1 Header
+   13.2 Front Page
+   13.3 Regular Content
+   13.4 Posts
+   13.5 Pages
+   13.6 Footer
+14.0 Comments
+15.0 Widgets
+16.0 Media
+   16.1 Galleries
+17.0 Customizer
+18.0 SVGs Fallbacks
+19.0 Media Queries
+20.0 Print
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.0 Normalize
+Styles based on Normalize v5.0.0 @link https://github.com/necolas/normalize.css
+--------------------------------------------------------------*/
+
+.PreSavedBox > table{ width: 100%; }
+.PreSavedBox td, .PreSavedBox th {border: 1px solid rgb(222, 222, 222);padding: 10px 5px; text-align: center; color: #373737;}
+.PreSavedBox th {font-family: 'rubiklight';font-size: 15px;font-weight: normal;}
+.PreSavedBox td{  font-size: 16px; }
+.PreSavedBox i{color: rgb(255, 255, 255);font-size: 14px;padding: 10px;margin:4px;}
+.PreSavedBox .fa.fa-eye{ background:#3AB608; }
+.PreSavedBox .fa.fa-trash{ background:#EB0011; }
+.PreSavedBox a{ margin-bottom: 5px; }
+.PreMapBox > img, .PreMapBox > iframe  {max-width: 100%;}
+.right_sidesec.righPro form > p {margin: 0 !important;}
+.right_sidesec.righPro {display: inline-block;width: 100%;}
+.right_sidesec.righPro .imagerow{ padding-top: 0px; }
+/*#ChangePassword .regular-text.strong.valid {width: 100% !important;}*/
+#ChangePassword .password-input-wrapper.inner_div.show-password {display: inline-block;width: 100%;}
+#ChangePassword #password button {
+  background: rgb(255, 0, 0) none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 4px;
+  color: rgb(255, 255, 255);
+  min-width: 85px;
+  padding: 3px 5px;
+}
+.hidenickname{display:none;}
+.action_wrapper{width: 160px;display:block;}
+.activeSection{ color: #ea0011 !important;}
+#ChangePassword .show-password #pass1-text {display: inline-block;float: left;}
+/* Base for label styling */
+.commongrafwrapper [type="checkbox"]:not(:checked),
+.commongrafwrapper [type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+.table_year_head{width:80px;display: block;}
+.commongrafwrapper [type="checkbox"]:not(:checked) + label, .commongrafwrapper [type="checkbox"]:checked + label {
+  cursor: pointer;
+  font-family: "rubiklight";
+  font-size: 16px;
+  padding-left: 2.45em;
+  position: relative;
+}
+/* checkbox aspect */
+.commongrafwrapper [type="checkbox"]:not(:checked) + label::before, .commongrafwrapper [type="checkbox"]:checked + label::before {
+  background: rgb(255, 255, 255) none repeat scroll 0 0;
+  border: 2px solid rgb(204, 204, 204);
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+  content: "";
+  height: 30px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 30px;
+}
+/* checked mark aspect */
+.commongrafwrapper [type="checkbox"]:not(:checked) + label::after, .commongrafwrapper [type="checkbox"]:checked + label::after {
+  color: #EA0011;
+  content: "✔";
+  font-size: 38px;
+  left: 0.2em;
+  line-height: 1;
+  position: absolute;
+  top: -12px;
+  transition: all 0.2s ease 0s;
+}
+/* checked mark aspect changes */
+.commongrafwrapper [type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+.commongrafwrapper [type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+/* disabled checkbox */
+.commongrafwrapper [type="checkbox"]:disabled:not(:checked) + label:before,
+.commongrafwrapper [type="checkbox"]:disabled:checked + label:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #ddd;
+}
+.commongrafwrapper [type="checkbox"]:disabled:checked + label:after {
+  color: #999;
+}
+.commongrafwrapper [type="checkbox"]:disabled + label {
+  color: #aaa;
+}
+.padtop0{ padding-top: 0px !important; }
+.dt_ResultHead {
+  font-family: "RubikRegular";
+  font-size: 28px;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+  margin-top: -30px;
+  text-align: center; position: relative;
+}
+.dt_ResultHead::after {
+  border: 1px solid rgb(234, 0, 17);
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 0px;
+  margin: auto !important;
+  position: absolute;
+  right: 0px;
+  width: 100px;
+  z-index: 99;
+}
+.resultListd .heading_details{ padding:13px 15px; }
+.resultListd .heading_details > h4 {
+  margin-bottom: 0;
+}
+/* accessibility */
+/*.commongrafwrapper [type="checkbox"]:checked:focus + label:before,
+.commongrafwrapper [type="checkbox"]:not(:checked):focus + label:before {
+  border: 2px dotted blue;
+}
+*/
+.ListTwoResult, .ListOneResult{ margin-bottom: 35px;  border: 1px solid #ddddde !important;}
+.ttResult {
+  color: rgb(255, 0, 0);
+  font-family: 'rubikmedium';
+  font-size: 19px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media(min-width: 1200px){
+#ChangePassword .show-password #pass1-text {display: inline-block;float: left;width: 77% !important;}
+#ChangePassword {max-width: 78%;}
+}
+@media(max-width: 1199px){
+	.leftProfile, .rightProfile {display: inline-block;width: 100%;}
+	#ChangeEmailAddress .regular-text, #UserProfile .profiletextarea{ width: 100% !important; }
+	.placeholder_inwrapper {display: block;margin: auto;}
+	#ChangePassword {text-align: center;}
+
+}
+@media(max-width: 767px){
+	.PreSavedBox {overflow-x: scroll;width: 100%; margin-bottom: 30px;}
+	.PreSavedBox::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.PreSavedBox::-webkit-scrollbar:vertical {
+    width: 12px;
+}
+
+.PreSavedBox::-webkit-scrollbar:horizontal {
+    height: 12px;
+}
+
+.PreSavedBox::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+
+.PreSavedBox::-webkit-scrollbar-track {
+    border-radius: 10px;  
+    background-color: #ffffff; 
+}
+}
+#myModal #fbuilder .pbreak .pbPrevious, .pbreak .pbNext, .pbSubmit{max-width:191px !important;}
+.paypalForm .modal-body p {
+    font-size: 14px;
+    font-weight: bold;
+    margin: auto;
+    max-width: 517px;
+    padding-bottom: 0;
+    padding-top: 29px;
+    text-align: center;
+}.wp_login_form {	margin-bottom:70px;}.wp_login_form .tml.tml-login {  margin: 0 auto;  width: 600px;  border: 1px solid #ccc;  max-width: 600px;  padding: 30px ;  margin-top: 50px;  margin-bottom: 30px;  border-radius: 5px;}.wp_login_form #loginform .newsociallogins, .wp_login_form #loginform h3 {  display: none;}.wp_login_form #loginform .input {  border: 1px solid #ccc;  border-radius: 5px;  font-size: 16px;  height: 45px;  padding-left: 15px;  background: #fff;   font-family: "RubikRegular";}.wp_login_form #user_login-error, .wp_login_form #user_pass-error {  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;  border: medium none;  color: #ea0011;  margin: 0;  padding: 0;   font-family: "RubikRegular";  width: 100%;}.login_submit #wp-submit {  background: #fff none repeat scroll 0 0;  border: 2px solid #ea0011;  border-radius: 5px;  color: #ea0011;  height: 48px;  margin-left: 15px;  min-width: 130px;  text-align: center;  transition: all 0.3s ease 0s;   font-family: "RubikRegular";  width: auto;  font-size: 20px;  text-transform: uppercase;}.login_submit #wp-submit:hover, .login_submit #wp-submit:focus {  background: #ea0011 none repeat scroll 0 0;  color: #fff;}.login_submit {  text-align: center;}.post-121 .entry-header {  background: #ea0011 none repeat scroll 0 0;  color: #fff;  padding: 30px 0;  text-align: center;  text-transform: uppercase;}.tml-user-login-wrap > label, .tml-user-pass-wrap  > label {  font-size: 14px;  margin-bottom: 0px;  text-transform: uppercase;  font-family: "RubikRegular";}@media(max-width:639px){	.wp_login_form .tml.tml-login {	border: 1px solid #ccc;	border-radius: 5px;	margin: 50px 5% 30px;	max-width: 90%;	padding:20px;	width: 90%;	}}
+.signup_modal .modal-title{font-family: 'Merriweather', serif !important;}
+.signup_modal .modal-content .fb{font-family: 'Merriweather', serif !important;}
+.signup_modal .modal-content .google{font-family: 'Merriweather', serif !important;}
+.signup_modal .modal-content .modal-body .input_block input{font-family: 'Merriweather', serif !important;}
+.signup_modal .modal-content .modal-body .sign-up{font-family: 'Merriweather', serif !important;}
+.lostPassWrap a{font-family: 'Merriweather', serif !important;}
